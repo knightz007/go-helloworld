@@ -25,3 +25,5 @@ spec:
     value: https://github.com/knightz007/go-helloworld.git
   - name: image-reference
     value: 667109142547.dkr.ecr.us-west-2.amazonaws.com/go-helloworld:latest
+  - name: dockerfile_path
+    value: ./src/Dockerfile

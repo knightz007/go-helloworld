@@ -11,6 +11,8 @@ spec:
     type: string
   - name: image-reference
     type: string
+  - name: dockerfile_path
+    type: string
   workspaces:
   - name: shared-data
   - name: docker-credentials
@@ -36,3 +38,5 @@ spec:
     params:
     - name: IMAGE
       value: $(params.image-reference)
+    - name: DOCKERFILE
+      value: $(params.dockerfile_path)
